@@ -596,8 +596,10 @@ section {
 }
 
 .popuptext {
-    display: flex;
+    display: block;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 60%;
     height: 100%;
     padding: 4rem;
@@ -606,8 +608,16 @@ section {
 .popuptext h1 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: var(--color-white);
+}
+
+.popuptext h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--color-grey-3);
+    text-align: center;
 }
 
 .popuptext ul {
