@@ -12,40 +12,6 @@
     })
 })();
 
-
-// const openModal = document.querySelectorAll('[data-modal-target]')
-// const closeModal = document.querySelectorAll('[data-close-button]')
-
-// const overlay = document.getElementById('overlay')
-
-// openModal.forEach(button => {
-//     button.addEventListener('click', () => {
-//         const modal = document.querySelector(button.dataset.modalTarget)
-//         openModal(modal)
-//     })
-// })
-
-// closeModal.forEach(button => {
-//     button.addEventListener('click', () => {
-//         const modal = button.closest('.modal__container')
-//         closeModal(modal)
-//     })
-// })
-
-// function openModal(modal) {
-//     if(modal == null) return
-//     modal.classList.add('active')
-//     overlay.classList.add('active')
-// }
-// function closeModal(modal) {
-//     if(modal == null) return
-//     modal.classList.remove('active')
-//     overlay.classList.remove('active')
-// }
-
-
-
-
 /*=============== SHOW MODAL ===============*/
 const showModal = (openButton, modalContent, appearOvr) => {
     const openBtn = document.getElementById(openButton),
@@ -73,10 +39,3 @@ function closeModal() {
 }
 closeBtn.forEach(c => c.addEventListener('click', closeModal))
 closeOverlay.forEach(c => c.addEventListener('click', closeModal))
-
-// closeOverlay.addEventListener('click', () => {
-//     const modals = document.querySelectorAll('.popup')
-//     modals.forEach(modal => {
-//         closeModal(modal)
-//     })
-// })
